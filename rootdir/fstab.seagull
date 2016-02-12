@@ -9,5 +9,8 @@
 /dev/block/bootdevice/by-name/FOTAKernel   /recovery    emmc    defaults                                                      defaults
 /dev/block/bootdevice/by-name/modem        /firmware    vfat    ro,shortname=lower,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:firmware_file:s0 wait
 
+# Mount /persist on b2g
+/dev/block/bootdevice/by-name/persist      /persist     ext4    noatime,nosuid,nodev,barrier=1,data=ordered                   wait,check
+
 /devices/msm_sdcc.2/mmc_host*              auto         auto    defaults                                                      voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/*/msm_hsusb_host/usb1/1-1/        auto         auto    defaults                                                      voldmanaged=usb:auto
