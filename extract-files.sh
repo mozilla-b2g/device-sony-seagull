@@ -18,4 +18,4 @@ DEVICE=seagull
 MANUFACTURER=sony
 STOCK=18.1.A.2.25
 
-. ../yukon/extract-files.sh
+. ../common/extract-files.sh

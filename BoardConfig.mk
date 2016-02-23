@@ -12,9 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/yukon/BoardConfig.mk
+include device/sony/yukon/PlatformConfig.mk
 
-TARGET_RECOVERY_FSTAB = device/sony/seagull/rootdir/fstab.yukon
+TARGET_RECOVERY_FSTAB = device/sony/seagull/rootdir/fstab.seagull
 
 TARGET_BOOTLOADER_BOARD_NAME := D5103
 
@@ -22,5 +22,5 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE   := 2067791872
 #Reserve space for data encryption (5360303104-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 5360286720
 
-#BOARD_KERNEL_CMDLINE += mem=128M@0 mem=755M@255M
+BOARD_KERNEL_CMDLINE += androidboot.hardware=seagull
 BOARD_KERNEL_CMDLINE += mem=1003M
