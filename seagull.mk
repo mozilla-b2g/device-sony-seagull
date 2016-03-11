@@ -24,4 +24,7 @@ PRODUCT_MODEL := Xperia T3 (B2G)
 PRODUCT_COPY_FILES += \
     device/sony/seagull/bootrec-device:root/sbin/bootrec-device
 
+# Set Gecko toolchain
+GECKO_TOOLS_PREFIX = prebuilts/gcc/$(HOST_PREBUILT_TAG)/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
+
 $(call inherit-product-if-exists, vendor/sony/seagull-blobs/seagull-vendor-blobs.mk)
